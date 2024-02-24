@@ -16,7 +16,7 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - \
 
 # Add the wait-for-it.sh script for waiting on dependent containers
 RUN curl https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh > /usr/local/bin/wait-for-it.sh \
-    && chmod +x /usr/local/bin/wait-for-it.sh
+    && chmod +x /usr/local/bin/wait-for-it.sh -t 60
 
 WORKDIR /app
 
