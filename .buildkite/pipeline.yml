@@ -10,5 +10,5 @@ steps:
     plugins:
       - docker-compose#v5.0.0:
           run: app
-    parallelism: 20
+    parallelism: 4
 
